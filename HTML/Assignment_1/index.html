@@ -1,0 +1,116 @@
+<!-- Task: Create a Student Information Page
+Objective:
+Create a webpage that displays a list of students, their courses, and allows a user to register a new student via a form. -->
+<html>
+
+<head>
+    <!-- Set the title of the webpage to "Student Information Page". -->
+    <title>"student information page"</title>
+</head>
+
+<body>
+    <!-- Create a heading (<h1>) at the top of the page saying "Student Information Dashboard". -->
+    <h1>Student Information Dashboard</h1>
+    <!-- Below the heading, add a paragraph (<p>) describing the purpose of the page (e.g., "This page displays a list of students enrolled in different courses and allows you to register a new student."). -->
+    <p>
+        This page displays a list of students enrolled in different courses and allows you to register a new student.
+    </p>
+    <!-- Add a section with the heading <h2>Student Activities</h2>. -->
+    <h2>Student Activities</h2>
+    <!-- In this section, use an unordered list (<ul>) to display the following activities:
+        Attend classes
+        Complete assignments
+        Participate in group projects
+        Take exams -->
+    <ul>
+        <li>Attend classes</li>
+        <li>Complete assignments</li>
+        <li>Participate in group projects</li>
+        <li>Take exams</li>
+    </ul>
+    <!-- Add another section with the heading <h2>Upcoming Events</h2>.
+ -->
+    <h2>Upcoming Events</h2>
+    <!-- In this section, use an ordered list (<ol>) to display the following events:
+        Final Exam - Dec 20, 2024
+        Project Submission Deadline - Dec 25, 2024
+        Winter Break Starts - Dec 26, 2024 -->
+    <ol>
+        <li> Final Exam - Dec 20, 2024</li>
+        <li>Project Submission Deadline - Dec 25, 2024</li>
+        <li>Winter Break Starts - Dec 26, 2024</li>
+    </ol>
+
+    <!-- Create a form section with the heading <h2>Student Registration</h2>. -->
+    <form>
+        <h2>Student Registration</h2>
+        <!-- The form should allow a user to input the following details:
+        Name: Text input
+        Age: Number input
+        Course: Dropdown select input with options like:
+        Mathematics
+        Science
+        Literature
+        Email: Email input
+        Add a submit button labeled "Register". -->
+
+        <label for="name">Name</label><br>
+        <input type="text" id="name" placeholder="Name"><br>
+
+        <label for="Age">Age</label><br>
+        <input type="number" id="Age" placeholder="Age"><br>
+
+        <label for="">Course</label><br>
+        <select>
+            <option>Mathematics</option>
+            <option>Science</option>
+            <option>Literature</option>
+        </select><br>
+        <label for="email">Email</label><br>
+        <input type="email" placeholder="Email" id="email"><br><br>
+
+        <button>Register</button>
+    </form>
+    <!-- Below the form, create a table with the heading <h2>Student List</h2>.
+    The table should have the following columns:
+    Student ID
+    Name
+    Course
+    Email -->
+    <table>
+        <h2>Student List</h2>
+        <thead>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Email</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>OO1</td>
+                <td>John Doe</td>
+                <td>Mathematics</td>
+                <td>john.doe@example.com</td>
+            </tr>
+            <tr>
+                <td>OO2</td>
+                <td>Jane Smith </td>
+                <td>Science</td>
+                <td>jane.smith@example.com</td>
+            </tr>
+            <tr>
+                <td>OO3</td>
+                <td>Emily Johnson</td>
+                <td>Literature</td>
+                <td>emily.johnson@example.com</td>
+            </tr>
+        </tbody>
+    </table><br><br><br>
+    
+<!-- Bonus task -->
+ <footer style="text-align: center;">Student Information System - 2024</footer>
+
+
+</body>
+
+</html>
