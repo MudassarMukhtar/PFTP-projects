@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+
+
+.link {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+
+}
+
+.link a {
+    text-decoration: none;
+    margin-left: 40px;
+    color: rgb(18, 73, 109);
+}
+
+
+button {
+    margin-left: 70px;
+    margin-right: 5px;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(11, 138, 147);
+    border: 1px solid rgb(36, 167, 13);
+    border-radius: 15px;
+    font-size: small;
+    padding: 5px;
+}
