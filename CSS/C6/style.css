@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(105, 103, 103);
+    width: 100vw;
+    height: 100vh;
+
+}
+
+/* ABSOLUTE: child will change their positions according to the Body
+.parent{
+
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(122, 82, 82);
+}
+/* z-index will always work with absolute & relative */
+.parent2 {
+
+    /* position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    background-color:aqua; */
+}
+
+/* Raltive(will always change its position according to its parent ) */
+.parent3 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+.child {
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    width: 100px;
+    height: 100px;
+    background-color: rgb(28, 134, 55);
+}
+
+
+/* STICKY position */
+.parent-sticky {
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+}
+
+.child-sticky {
+
+    position: sticky;
+    top: 0px;
+
+
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+
+/* fixed  */
+.fixed {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+/* Display */
+
+.item{
+background-color: aquamarine;
+ height: 100px;
+ margin-bottom: 5px;
+}
+
+.inline{
+    background-color: rgb(68, 22, 111);
+    
+/* display:inline (no height and width applicable) */
+    /* display: inline; */
+    padding: 10px;
+    margin: 5px;
+/* display:inline-block  (this propert allow us to apply ant property on element not like disply:inline)*/
+   display: inline-block;  
+   height: 20px;
+   width: 20px;  
+}
+
+/* display block */
+.block{
+    background-color:bisque;
+    display: block;
+}
