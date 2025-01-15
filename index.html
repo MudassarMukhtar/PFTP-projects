@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rough</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(154, 145, 27);
+        width: 100%;
+        box-shadow: 5px 5px 5px rgb(121, 65, 65);
+        position:fixed;
+        top: 0%;
+        z-index: 1;
+    }
+
+    #logo {
+        position: absolute;
+        left: 2%;
+    }
+
+    #logo img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .links {
+        display: flex;
+    }
+
+    .links li {
+        
+        list-style: none;
+        padding: 5px;
+        box-shadow: 4px 4px 5px rgb(121, 65, 65) inset;
+    }
+
+    .links a {
+        margin: auto 10px;
+        text-decoration: none;
+        color: aliceblue;
+    }
+    .links a:hover{
+        animation-name: glow;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+    }
+
+    @keyframes glow{
+        0%{
+            border-bottom:2px solid rgb(121, 65, 65);
+        }
+        100%{
+            border-bottom:2px solid rgb(121, 65, 65)  ;
+            transition: all;
+        }
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        right: 2%;
+    }
+
+    .btns input {
+        background-color: rgb(154, 145, 27);
+        color: aliceblue;
+        margin: 2px;
+        border: 2px solid rgb(121, 65, 65) ;
+        border-radius: 5px;
+    }
+    .btns input:hover{
+        box-shadow:2px 2px 6px rgb(121, 65, 65) ;
+        font-size: small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+    /* img section */
+
+.center_section{
+    height: 100vh;
+    width: 100%;
+
+
+
+    position: absolute;
+    top: 0px;
+
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: rgb(119, 116, 116);
+    background-blend-mode:darken;
+}
+.center_section #title{
+    width: 100%;
+    position: relative;
+    top:50% ;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    border: 2px solid white;    
+}
+
+
+</style>
+
+<body>
+    <header class="navbar">
+        <div id="logo"><a href=""><img src="logo.jpg" alt=""></a></div>
+        <ul class="links">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+        <form class="btns">
+            <input type="submit" value="SignUp">
+            <input type="submit" value="SignIn">
+        </form>
+    </header>
+    <section class="center_section">
+        <div id="title">
+           <div>Title</div>
+           <div>Sub Title</div> 
+        </div>
+   </section>
+</body>
+
+</html>
